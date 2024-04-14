@@ -95,9 +95,9 @@ shift
 goto :ARGS_LOOP
 
 :POST_ARGS_LOOP
-%MSBUILD% %~dp0\BlackArchWSL.sln /t:%_MSBUILD_TARGET% /m /nr:true /p:Configuration=%_MSBUILD_CONFIG%;Platform=%_MSBUILD_PLATFORM%
+@REM %MSBUILD% %~dp0\BlackArchWSL.sln /t:%_MSBUILD_TARGET% /m /nr:true /p:Configuration=%_MSBUILD_CONFIG%;Platform=%_MSBUILD_PLATFORM%
 
-@REM %MSBUILD% %~dp0\BlackArchWSL.sln /t:%_MSBUILD_TARGET% /m /nr:false /p:Configuration=%_MSBUILD_CONFIG% /p:AppxBundlePlatforms="x64|ARM64" -verbosity:normal /p:UapAppxPackageBuildMode="StoreUpload" /p:UseSubFolderForOutputDirDuringMultiPlatformBuild=false
+%MSBUILD% %~dp0\BlackArchWSL.sln /t:%_MSBUILD_TARGET% /m /nr:false /p:Configuration=%_MSBUILD_CONFIG% /p:AppxBundlePlatforms="x64|ARM64" -verbosity:normal /p:UapAppxPackageBuildMode="StoreUpload" /p:UseSubFolderForOutputDirDuringMultiPlatformBuild=false
 
 
 if (%ERRORLEVEL%) == (0) (

@@ -299,3 +299,4 @@ DistroLauncher/messages.h
 *.tar.gz
 /.vscode
 /.sarif
+/DistroLauncher.sln.bak
