@@ -1,4 +1,4 @@
-LanguageNames = (English=0x409:MSG00409)
+LanguageNames = (English=0x409:MSG409)
 
 MessageId=1001 SymbolicName=MSG_WSL_REGISTER_DISTRIBUTION_FAILED
 Language=English

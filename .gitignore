@@ -18,6 +18,7 @@
 [Rr]elease/
 [Rr]eleases/
 x64/
+ARM64/
 x86/
 bld/
 [Bb]in/
@@ -296,3 +297,5 @@ DistroLauncher/messages.h
 *.dll
 *.exe
 *.tar.gz
+/.vscode
+/.sarif
